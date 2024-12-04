@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = prompt("Ваше ім'я?");
+        alert("Привіт, " + name + "!");
+
+        const currentYear = 2024;
+        let year = prompt("Рік Вашого народження?");
+        alert("Ваш вік: " + (currentYear - year));
+
+        let side = prompt("Значення сторони квадрата");
+        alert("Периметр квадрата: " + (4 * side));
+
+        let radius = prompt("Значення радіусу круга");
+        alert("Площа круга: " + Math.pow(radius, 2) + "π");
+
+        let distance = prompt("Відстань між містами (км)");
+        let wantedTime = prompt("Бажана кількість годин");
+        alert("Необхідна швидкість: " + (distance/wantedTime) + "км/г");
+
+        const rateEuro = 0.95;
+        let dollarAmount = prompt("Кількість доларів для обміну в євро");
+        alert(dollarAmount + "$ = " + (dollarAmount * rateEuro) + "€");
+
+        const fixedSize = 820;
+        let driveSize = prompt("Обсяг флешки (Гб)");
+        alert("На флешку може уміститися " + parseInt(((driveSize * 1024) / fixedSize)) + " файлів розміру " + fixedSize + "Мб");
+
+        let moneyAmount = prompt("Кількість грошей");
+        let chocolatePrice = prompt("Вартість шоколадки");
+        let chocolateAmount = parseInt(moneyAmount / chocolatePrice);
+        let moneyChange = moneyAmount - (chocolateAmount * chocolatePrice);
+        alert("Ви можете купити " + chocolateAmount + " шоколадки. Ваша решта: " + moneyChange + " грн");
+
+        let number = prompt("Тризначне число");
+        let reversedNumber = String(number % 10) + String(Math.floor(number / 10) % 10) + String(Math.floor(number / 100) % 10);
+        alert(reversedNumber);
+
+        let number2 = prompt("Число");
+        alert(number2 % 2 == 0 ? "Число парне" : "Число непарне");
+
+    </script>
+
+
+</body>
+</html>
